@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+    <form action="calculator.php" method="get">
+        <p>
+            <label>First Number:</label>
+            <input type="text" name="fn" id="fninput" />
+        </p>
+        <p>
+            <label>Last Number:</label>
+            <input type="text"  name="ln" id="lninput" />
+        </p>
+
+        
+        <p>Please select the calculation method:</p>
+        <input type="radio" name="symbol" value="a"> Add<br>
+        <input type="radio" name="symbol" value="s"> Subtract<br>
+        <input type="radio" name="symbol" value="m"> Multiply<br>  
+        <input type="radio" name="symbol" value="d"> Divide<br>  
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

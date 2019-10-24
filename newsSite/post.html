@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Post New Story</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="post.php" method="GET" enctype="multipart/form-data">
+            <div class="post">
+                <label for='story'><b>New Story</b></label>
+                <br>
+                Title:
+                <input class = 'input' id = 'posttitle' type="text" placeholder="Enter A Title" name='posttitle' required><br>
+                Story:
+                <textarea row ="500" col="700" name="story"></textarea>
+                <button class = 'input' type="submit">Submit</button>
+            </div>
+        </form>
+        <form action="homepage.php" method="GET" enctype="multipart/form-data">
+            <button class = 'input' type="submit">Home</button>
+        </form>
+    </body>
+</html>

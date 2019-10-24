@@ -1,0 +1,79 @@
+  body {
+    background-color: azure;
+  }
+
+  .container{
+      text-shadow: 1px 1px  rgb(0, 96, 160);
+      font-style: italic;
+      font-size: 25px;
+      margin-left: 600px;
+      color: rosybrown;
+      line-height: 1em;
+      font-weight:normal;
+      font-size: 50px;
+      vertical-align: middle;
+      font-family: fantasy;
+      
+  }
+  
+  .input{
+    margin-left: 600px;
+    vertical-align: middle;
+  }
+
+  .title{
+    font-size: 40px;
+    background-color: #8086db;
+    color: white;
+  }
+  .subtitle{
+    font-size: 18px;
+    background-color: #db80a6;
+    color: white;
+  }
+
+  .subtitlehome{
+    font-size: 25px;
+    background-color: #cadb80;
+    color: white;
+  }
+
+  .subtitlehome#postby {
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .content {
+    font-size:25px;
+    line-height: 1.6;
+    background-color: #80d0db;
+  }
+  .comment {
+    font-size:18px;
+    line-height: 1.6;
+    background-color: #db80a6;
+    color: white;
+  }
+  .date {
+    font-size:14px;
+    line-height: 1.6;
+    background-color: #cadb80;
+    color: white;
+  }
+  body {
+    background-color: white;
+  }
+  h1 {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+      font-size: 50px;
+      background-color: #8086db;
+      color: white;
+  }
+  h2 {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+      text-indent: 150px;
+      background-color: #db80a6;
+      color: white;
+  }

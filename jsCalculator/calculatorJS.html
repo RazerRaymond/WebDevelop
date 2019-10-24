@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Calculator</title>
+
+</head>
+
+<body>
+	<form id="inputs">
+		<p>
+			<label>First Number:</label>
+			<input type="number" name="fn" id="fninput" />
+		</p>
+		<p>
+			<label>Last Number:</label>
+			<input type="number" name="ln" id="lninput" />
+		</p>
+
+
+		<p>Please select the calculation method:</p>
+		<input type="radio" name="symbol" value="a" id="add"> Add<br>
+		<input type="radio" name="symbol" value="s" id="sub"> Subtract<br>
+		<input type="radio" name="symbol" value="m" id="mult"> Multiply<br>
+		<input type="radio" name="symbol" value="d" id="div"> Divide<br>
+
+	</form>
+	<br>
+	<label>Result:</label>
+	<label id="res"></label>
+	<script>
+		// your code here
+		document.getElementById("fninput").addEventListener("change", calculate, false);
+		document.getElementById("lninput").addEventListener("change", calculate, false);
+		document.getElementById("add").addEventListener("change", calculate, false);
+		document.getElementById("sub").addEventListener("change", calculate, false);
+		document.getElementById("mult").addEventListener("change", calculate, false);
+		document.getElementById("div").addEventListener("change", calculate, false);
+		function calculate() {
+			let buttonArray = document.getElementsByName("symbol");
+			let decider;
+			for (let i = 0; i < buttonArray.length; i++) {
+				if (buttonArray[i].checked) {
+					decider = buttonArray[i].value;
+				}
+			}
+
+			if (decider == "a") {
+				let a = document.getElementById("fninput").value;
+				let b = document.getElementById("lninput").value;
+				let c = (parseInt(a) + parseInt(b));
+				document.getElementById("res").innerHTML = c;
+			}
+			if (decider == "s") {
+				let a = document.getElementById("fninput").value;
+				let b = document.getElementById("lninput").value;
+				let c = (parseInt(a) - parseInt(b));
+				document.getElementById("res").innerHTML = c;
+			}
+			if (decider == "m") {
+				let a = document.getElementById("fninput").value;
+				let b = document.getElementById("lninput").value;
+				let c = (parseInt(a) * parseInt(b));
+				document.getElementById("res").innerHTML = c;
+			}
+			if (decider == "d") {
+				let a = document.getElementById("fninput").value;
+				let b = document.getElementById("lninput").value;
+				let c = (parseInt(a) / parseInt(b));
+				document.getElementById("res").innerHTML = c;
+			}
+		}
+
+	</script>
+</body>
+</html>

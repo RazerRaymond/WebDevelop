@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+  }
+
+  .container{
+      text-shadow: 1px 1px  rgb(0, 96, 160);
+      font-style: italic;
+      font-size: 25px;
+      margin-left: 600px;
+      color: rosybrown;
+      line-height: 1em;
+      font-weight:normal;
+      font-size: 50px;
+      vertical-align: middle;
+      font-family: fantasy;
+      
+  }
+  
+  .input{
+    vertical-align: middle;
+  }
